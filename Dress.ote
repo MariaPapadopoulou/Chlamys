@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontoterminology name="Being">
+
+<author name="Christophe"/>
+
+    <concept name="Animal">
+        <isa name="Being"/>
+        <language name="fr">
+            <term name="animal">
+            </term>
+        </language>
+        <language name="en">
+            <term name="animal">
+            </term>
+        </language>
+    </concept>
+    <concept name="Being">
+        <type value="root"/>
+        <language name="fr">
+            <term name="être">
+            </term>
+        </language>
+        <language name="en">
+            <term name="being">
+            </term>
+        </language>
+    </concept>
+    <concept name="God">
+        <isa name="Being"/>
+        <language name="fr">
+            <term name="dieu">
+            </term>
+        </language>
+        <language name="en">
+            <term name="god">
+            </term>
+        </language>
+    </concept>
+    <concept name="Half-God">
+        <isa name="God"/>
+        <isa name="Human Being"/>
+    </concept>
+    <concept name="Human Being">
+        <isa name="Being"/>
+        <language name="fr">
+            <term name="être humain">
+            </term>
+        </language>
+        <language name="en">
+            <term name="human being">
+            </term>
+        </language>
+    </concept>
+    <concept name="Man">
+        <isa name="Human Being"/>
+        <language name="fr">
+            <term name="homme">
+            </term>
+        </language>
+        <language name="en">
+            <term name="man">
+            </term>
+        </language>
+    </concept>
+    <concept name="Woman">
+        <isa name="Human Being"/>
+        <language name="fr">
+            <term name="femme">
+            </term>
+        </language>
+        <language name="en">
+            <term name="woman">
+            </term>
+        </language>
+    </concept>
+</ontoterminology>

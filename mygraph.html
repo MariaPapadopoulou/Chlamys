@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <title>Being</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <script src="javascript\jquery.min.js">blank</script>
+    <script src="javascript\springy.js">blank</script>
+    <script src="javascript\springyui.js">blank</script>
+    <script>var graph = new Springy.Graph();
+var node1 = graph.newNode({label:'animal'});
+var node2 = graph.newNode({label:'être'});
+var node3 = graph.newNode({label:'dieu'});
+var node4 = graph.newNode({label:'Half-God'});
+var node5 = graph.newNode({label:'être humain'});
+var node6 = graph.newNode({label:'homme'});
+var node7 = graph.newNode({label:'femme'});
+
+graph.newEdge(node1,node2,{color: '#CC333F',label: 'is a'});
+graph.newEdge(node3,node2,{color: '#CC333F',label: 'is a'});
+graph.newEdge(node4,node3,{color: '#CC333F',label: 'is a'});
+graph.newEdge(node4,node5,{color: '#CC333F',label: 'is a'});
+graph.newEdge(node5,node2,{color: '#CC333F',label: 'is a'});
+graph.newEdge(node6,node5,{color: '#CC333F',label: 'is a'});
+graph.newEdge(node7,node5,{color: '#CC333F',label: 'is a'});
+
+jQuery(function(){
+var springy = window.springy = jQuery('#springy').springy({
+graph: graph
+});
+});</script>
+    <canvas id="springy" width="640" height="480" />
+  </body>
+</html>
